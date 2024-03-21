@@ -1,6 +1,3 @@
-Untuk membuat halaman login agar bisa terhubung ke halaman menu setelah proses login berhasil, Anda perlu menggunakan bahasa pemrograman untuk menangani proses login dan redirect ke halaman menu. Berikut adalah contoh sederhana menggunakan PHP untuk melakukan hal ini:
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +27,7 @@ Untuk membuat halaman login agar bisa terhubung ke halaman menu setelah proses l
     <div class="row justify-content-center">
       <div class="col-md-4">
         <h1 class="text-center mb-4">Login</h1>
-        <form method="POST" action="halaman beranda.html"> <!-- Ganti login.php dengan nama file yang menangani proses login -->
+        <form method="POST" action="halamanberanda.html"> <!-- Ganti login.php dengan nama file yang menangani proses login -->
           <div class="mb-3">
             <label for="email" class="form-label">Email address</label>
             <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
@@ -50,4 +47,3 @@ Untuk membuat halaman login agar bisa terhubung ke halaman menu setelah proses l
 </html>
 ```
 
-Dalam contoh di atas, form login akan dikirimkan ke file `login.php` menggunakan metode POST. Anda perlu membuat file `login.php` yang menangani proses autentikasi dan mengatur redirect ke halaman menu setelah login berhasil.

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Menu Film</title>
+  <!-- Add Slick Carousel and jQuery -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-image: url('https://4.bp.blogspot.com/--x95PQKNheg/WnAkmSzJwqI/AAAAAAAADHA/Cg-as972C2EKfVHv1Zia9c42kbOtrpatgCLcBGAs/s1600/Review-Film-Dilan-1990-auliarahmahtnaz-cover.png'); /* Ganti dengan URL gambar latar belakang */
+      background-size: 100% 100%; /* Sesuaikan ukuran background dengan ukuran web */
+      background-position: center;
+    }
+    header {
+      background-color: #010101;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px;
+      flex-grow: 1;
+    }
+    .slider {
+      width: 100%;
+    }
+    .slide {
+      padding: 2cm; /* Tambahkan padding di sekitar gambar */
+    }
+    .slide img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Menu Film</h1>
+  </header>
+  <div class="container">
+    <div class="slider">
+      <div class="slide"><a href="trailer.html"><img src="https://static.promediateknologi.id/crop/0x0:0x0/x/photo/p2/46/2024/01/09/urutan-nonton-dilan-1010210655.jpg" alt="Dilan 1990 (2018)"></a></div>
+      <div class="slide"><a href="trailer.html"><img src="https://static.promediateknologi.id/crop/0x0:0x0/x/photo/p2/46/2024/01/09/urutan-film-dilan-dan-milea-4051093805.jpg" alt="Dilan 1991 (2019)"></a></div>
+      <div class="slide"><a href="trailer.html"><img src="https://static.promediateknologi.id/crop/0x0:0x0/x/photo/p2/46/2024/01/09/urutan-nonton-film-dilan-2394608410.jpg" alt="Milea: Suara dari Dilan (2020)"></a></div>
+      <!-- Tambahkan lebih banyak gambar jika diperlukan -->
+    </div>
+  </div>
+  <script>
+    $(document).ready(function(){
+      $('.slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: true,
+        dots: true
+      });
+    });
+  </script>
+</body>
+</html>
